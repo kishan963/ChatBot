@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#302F2F"
+    tools:context=".MainActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/idRVChats"
+        android:layout_above="@+id/Message"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="-2dp" />
+
+    <LinearLayout
+        android:id="@+id/Message"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <EditText
+            android:id="@+id/idEdtMessage"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="4"
+            android:background="#CFCECE"
+            android:hint="Enter Message" />
+
+        <ImageButton
+            android:id="@+id/idIBSend"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#6DAAA4"
+            android:src="@android:drawable/ic_menu_send" />
+
+    </LinearLayout>
+
+</RelativeLayout>
